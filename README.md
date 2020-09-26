@@ -1,4 +1,4 @@
-view quickshop at https://maulanamaleek.github.io
+view quickshop at https://maulanamaleek.github.io/quickshop
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
