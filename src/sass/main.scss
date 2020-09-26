@@ -1,0 +1,567 @@
+@import "./resets";
+@import "./variables";
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  height: max-content;
+}
+
+.home {
+  position: absolute;
+  height: max-content;
+  width: 100vw;
+  margin-top: 0;
+}
+
+.app {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+// Navbar aja
+
+.navbar-container {
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: $shadow;
+  z-index: 99;
+
+  .navbar-content {
+    width: 70%;
+    height: 90px;
+    @include flexAlign;
+    @include centerDiv;
+
+    @media screen and (max-width: 390px) {
+      width: 100vw;
+    }
+
+    .logo-small {
+      display: none;
+      width: 40px;
+      @media screen and (max-width: 390px) {
+        display: block;
+      }
+    }
+
+    h1 {
+      color: palevioletred;
+
+      @media screen and (max-width: $mediaSM) {
+        display: none;
+      }
+    }
+
+    form {
+      width: 500px;
+      height: 50px;
+      padding: 5px 10px;
+      align-items: center;
+      background-color: $white;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: $mediaSM) {
+        width: 180px;
+        height: 30px;
+        padding: 3px 6px;
+        border-radius: 3px;
+      }
+
+      input {
+        height: 40px;
+        width: 420px;
+        outline: none;
+        padding: 5px 10px;
+        border: none;
+        background-color: $white;
+        @media screen and (max-width: $mediaSM) {
+          width: 130px;
+          height: 25px;
+          padding: 3px 6px;
+          border-radius: 3px;
+          font-size: small;
+        }
+      }
+
+      button {
+        background-color: $primary;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 15px;
+        transition: all ease 0.3s;
+
+        @media screen and (max-width: $mediaSM) {
+          padding: 4px 8px;
+          border-radius: 5px;
+          font-size: small;
+        }
+
+        &:hover {
+          @include btnAnim;
+        }
+      }
+    }
+
+    .info {
+      position: relative;
+      display: flex;
+      width: 110px;
+      justify-content: space-between;
+      @media screen and (max-width: $mediaSM) {
+        width: 60px;
+        margin-right: 10px;
+      }
+
+      .fa-user {
+        color: $primary;
+        @media screen and (max-width: $mediaSM) {
+          width: 20px;
+        }
+      }
+
+      .cart {
+        i {
+          color: $dark;
+        }
+
+        .fa-shopping-cart {
+          color: palevioletred;
+          @media screen and (max-width: $mediaSM) {
+            width: 25px;
+          }
+        }
+
+        .cart-count {
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top: -10px;
+          line-height: 0;
+          right: 60px;
+          font-weight: bolder;
+          font-size: 0.7rem;
+          border-radius: 50%;
+          background-color: $primary;
+          @media screen and (max-width: $mediaSM) {
+            width: 15px;
+            top: 0px;
+            height: 15px;
+            right: 30px;
+          }
+
+          p {
+            display: block;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            @media screen and (max-width: $mediaSM) {
+              font-size: smaller;
+            }
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// banner no slider
+
+.banner-container {
+  margin-top: 150px;
+  width: 100vw;
+  height: 300px;
+  @media screen and (max-width: $mediaSM) {
+    margin-top: 90px;
+    height: 150px;
+  }
+
+  .banner-content {
+    width: 70%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    column-gap: 10px;
+    @include centerDiv;
+
+    @media screen and (max-width: $mediaSM) {
+      width: 100vw;
+      height: 150px;
+      display: block;
+    }
+
+    .main-banner {
+      background-color: $primary;
+      border-radius: 15px;
+
+      @media screen and (max-width: $mediaSM) {
+        border-radius: 0;
+        width: 100vw;
+        height: 150px;
+      }
+    }
+
+    .side-banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .side-item {
+        width: 500px;
+        height: 145px;
+        border-radius: 10px;
+        background-color: palevioletred;
+
+        @media screen and (max-width: $mediaSM) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Pilih kategori
+.category-container {
+  margin-top: 30px;
+  width: 100vw;
+  height: 100px;
+  @media screen and (max-width: $mediaSM) {
+    margin-top: 10px;
+  }
+
+  .category-content {
+    width: 70%;
+    @include flexAlign;
+    @include centerDiv;
+    @media screen and (max-width: $mediaSM) {
+      width: max-content;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+
+    .item {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      background-color: $primary;
+      @include cardSM;
+
+      @media screen and (max-width: $mediaSM) {
+        background-color: #fff;
+      }
+      .fas {
+        color: $primary;
+      }
+
+      p {
+        @media screen and (max-width: $mediaSM) {
+          font-size: 0.7rem;
+        }
+      }
+
+      i {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// Produk
+.products-container {
+  margin-top: 30px;
+  width: 100vw;
+  height: max-content;
+  @media screen and (max-width: $mediaSM) {
+    margin-top: 5px;
+  }
+
+  .products-content {
+    width: 70%;
+    height: max-content;
+    @include centerDiv;
+    @media screen and (max-width: $mediaSM) {
+      width: 100%;
+    }
+
+    h1 {
+      @media screen and (max-width: $mediaSM) {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+
+    .products-grid {
+      display: grid;
+      width: 100%;
+      height: max-content;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      @media screen and (max-width: $mediaSM) {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .product-grid-items {
+        margin-top: 10px;
+        background-color: white;
+        position: relative;
+        @include cardLG;
+
+        h5 {
+          position: absolute;
+          top: 60%;
+          width: max-content;
+          left: 50%;
+          font-size: 1.1rem;
+          transform: translateX(-50%);
+        }
+
+        p {
+          position: absolute;
+          width: max-content;
+          font-size: 0.9rem;
+          top: 70%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        button {
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translateX(-50%);
+          @include btnMD;
+        }
+
+        .product-images {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-height: 150px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Detail produk
+
+.detail-container {
+  width: 50vw;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 0;
+  box-shadow: $shadow;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .back {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-weight: bolder;
+
+    &:hover {
+      cursor: pointer;
+      color: $primary;
+    }
+  }
+  .detail-image {
+    margin-top: 120px;
+    img {
+      max-width: 350px;
+      max-height: 400px;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .detail-text {
+    margin-top: 120px;
+
+    p {
+      margin-top: 50px;
+      max-width: 400px;
+    }
+
+    h5 {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  .btn-keranjang {
+    position: relative;
+    background-color: palevioletred;
+    border: 0;
+    outline: 0;
+    color: white;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    border-radius: 10px 0px 0px 10px;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 10px rgba($color: rgb(136, 50, 68), $alpha: 0.2);
+    }
+  }
+
+  .quantity {
+    margin-top: 50px;
+
+    .quantity-text {
+      margin-right: 10px;
+    }
+    button {
+      font-weight: bolder;
+      font-size: 1.2rem;
+      width: 20px;
+      border: 0;
+      background-color: palevioletred;
+      color: $white;
+      border-radius: 5px;
+      transition: all ease 0.3s;
+      margin-right: 10px;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 2px rgba(136, 50, 68, 0.2) al;
+      }
+    }
+  }
+
+  .btn-beli {
+    position: relative;
+    background-color: $primary;
+    border: 0;
+    outline: 0;
+    color: $dark;
+    text-transform: uppercase;
+    padding: 10px 12px;
+    border-radius: 0 10px 10px 0;
+    margin-left: 0px;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 10px rgba($color: rgb(201, 143, 37), $alpha: 0.2);
+    }
+  }
+}
+
+// Footer, Nanti tambahkan built with
+
+.footer {
+  margin-top: 70px;
+  text-align: center;
+  color: $white;
+  background-color: $darker;
+  width: 100vw;
+  height: 300px;
+
+  padding-top: 140px;
+}
+
+.thanks {
+  text-align: center;
+  margin-top: 500px;
+}
+
+.cart-container {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  .cart-content {
+    width: 60%;
+    padding: 15px 20px;
+    margin: auto;
+    min-height: 400px;
+    box-shadow: $shadow;
+    border-radius: 25px;
+
+    .back {
+      position: absolute;
+      top: 24%;
+      left: 25%;
+      font-weight: bolder;
+    }
+
+    .cart-total {
+      margin: 50px auto;
+      display: flex;
+      flex-direction: row;
+      width: 66.5%;
+
+      justify-content: space-between;
+
+      .total-value {
+        text-align: right;
+      }
+    }
+    .cart-grid-container {
+      width: 90%;
+      margin: auto;
+
+      hr {
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+      }
+
+      .cart-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+
+        p:nth-child(3) {
+          text-align: right;
+          margin-right: 130px;
+        }
+      }
+      .cart-head {
+        margin-top: 40px;
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        font-size: smaller;
+
+        h2 {
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}
+
+.bayar-cart {
+  padding: 10px 12px;
+  background-color: $primary;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: 0;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

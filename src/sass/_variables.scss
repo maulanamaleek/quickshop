@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+$primary: #ffd300;
+$dark: #464646;
+$darker: #252525;
+$white: #eee;
+$shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+$mediaSM: 390px;
+
+@mixin flexAlign {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin centerDiv {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin btnAnim {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+@mixin cardSM {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 0;
+  transition: all ease 0.3s;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $shadow;
+    transform: translateY(-3px);
+  }
+}
+
+@mixin cardLG {
+  width: 200px;
+  height: 280px;
+  border-radius: 10px;
+  border: 0;
+  transition: all ease 0.3s;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $shadow;
+    transform: translateY(-3px);
+  }
+}
+
+@mixin btnMD {
+  background-color: $primary;
+  border: 0;
+  border-radius: 10px;
+  font-weight: bolder;
+  outline: none;
+  padding: 5px 10px;
+  transition: all ease 0.3s;
+
+  &:hover {
+    background-color: rgba($color: #ffd300, $alpha: 0.9);
+    cursor: pointer;
+  }
+}
