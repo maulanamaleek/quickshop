@@ -72,6 +72,7 @@ body {
         height: 30px;
         padding: 3px 6px;
         border-radius: 3px;
+        overflow: hidden;
       }
 
       input {
@@ -113,9 +114,12 @@ body {
       position: relative;
       display: flex;
       width: 110px;
+      height: max-content;
+      overflow: visible;
       justify-content: space-between;
       @media screen and (max-width: $mediaSM) {
         width: 60px;
+
         margin-right: 10px;
       }
 
@@ -163,6 +167,7 @@ body {
             top: 50%;
             @media screen and (max-width: $mediaSM) {
               font-size: smaller;
+              overflow: visible;
             }
           }
         }
@@ -236,6 +241,13 @@ body {
   height: 100px;
   @media screen and (max-width: $mediaSM) {
     margin-top: 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .category-content {
@@ -243,9 +255,11 @@ body {
     @include flexAlign;
     @include centerDiv;
     @media screen and (max-width: $mediaSM) {
+      display: flex;
       width: max-content;
       overflow-x: scroll;
-      white-space: nowrap;
+      overflow-y: hidden;
+      flex-wrap: nowrap;
     }
 
     .item {
@@ -256,6 +270,7 @@ body {
 
       @media screen and (max-width: $mediaSM) {
         background-color: #fff;
+        overflow-y: hidden;
       }
       .fas {
         color: $primary;
