@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/quickshop/static/css/main.cb45274d.chunk.css",
+    "main.js": "/quickshop/static/js/main.5e3a1c17.chunk.js",
+    "main.js.map": "/quickshop/static/js/main.5e3a1c17.chunk.js.map",
+    "runtime-main.js": "/quickshop/static/js/runtime-main.cb5af680.js",
+    "runtime-main.js.map": "/quickshop/static/js/runtime-main.cb5af680.js.map",
+    "static/js/2.e5012747.chunk.js": "/quickshop/static/js/2.e5012747.chunk.js",
+    "static/js/2.e5012747.chunk.js.map": "/quickshop/static/js/2.e5012747.chunk.js.map",
+    "index.html": "/quickshop/index.html",
+    "precache-manifest.66a0078129b7f3cfa30856eb0bf6fb18.js": "/quickshop/precache-manifest.66a0078129b7f3cfa30856eb0bf6fb18.js",
+    "service-worker.js": "/quickshop/service-worker.js",
+    "static/css/main.cb45274d.chunk.css.map": "/quickshop/static/css/main.cb45274d.chunk.css.map",
+    "static/js/2.e5012747.chunk.js.LICENSE.txt": "/quickshop/static/js/2.e5012747.chunk.js.LICENSE.txt",
+    "static/media/alex.jpg": "/quickshop/static/media/alex.056f526e.jpg",
+    "static/media/bag.jpg": "/quickshop/static/media/bag.ed093238.jpg",
+    "static/media/basket.jpg": "/quickshop/static/media/basket.fcea540d.jpg",
+    "static/media/canon.jpg": "/quickshop/static/media/canon.c2e471b2.jpg",
+    "static/media/cat.jpg": "/quickshop/static/media/cat.334802d3.jpg",
+    "static/media/fan.jpg": "/quickshop/static/media/fan.8ec58fc1.jpg",
+    "static/media/hawai.png": "/quickshop/static/media/hawai.1ed136e3.png",
+    "static/media/jeans.png": "/quickshop/static/media/jeans.52a7337f.png",
+    "static/media/jogging.png": "/quickshop/static/media/jogging.ec92a79e.png",
+    "static/media/jordan.jpg": "/quickshop/static/media/jordan.b461b2f1.jpg",
+    "static/media/kaos.jpg": "/quickshop/static/media/kaos.a0655ae4.jpg",
+    "static/media/kemeja.jpg": "/quickshop/static/media/kemeja.224e95eb.jpg",
+    "static/media/key.jpg": "/quickshop/static/media/key.5c938b95.jpg",
+    "static/media/kid.jpg": "/quickshop/static/media/kid.c39fcf1b.jpg",
+    "static/media/macbook.jpg": "/quickshop/static/media/macbook.397ae887.jpg",
+    "static/media/necklace.jpg": "/quickshop/static/media/necklace.ed62ee47.jpg",
+    "static/media/oppo.jpg": "/quickshop/static/media/oppo.d42f8ef1.jpg",
+    "static/media/pensil.jpg": "/quickshop/static/media/pensil.2496fb1b.jpg",
+    "static/media/skateboard.jpg": "/quickshop/static/media/skateboard.b3a3ef43.jpg",
+    "static/media/water.jpg": "/quickshop/static/media/water.74b9d65d.jpg",
+    "static/media/whiskas.jpg": "/quickshop/static/media/whiskas.b37245cd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb5af680.js",
+    "static/js/2.e5012747.chunk.js",
+    "static/css/main.cb45274d.chunk.css",
+    "static/js/main.5e3a1c17.chunk.js"
+  ]
+}
