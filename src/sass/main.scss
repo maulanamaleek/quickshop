@@ -318,6 +318,7 @@ body {
       width: 100%;
       height: max-content;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
       @media screen and (max-width: $mediaSM) {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       }
@@ -382,6 +383,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media screen and (max-width: $mediaSM) {
+    width: 100vw;
+    height: max-content;
+    grid-template-columns: 1fr;
+    top: 500px;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
@@ -399,6 +407,10 @@ body {
   }
   .detail-image {
     margin-top: 120px;
+    @media screen and (max-width: $mediaSM) {
+      overflow: hidden;
+      height: max-content;
+    }
     img {
       max-width: 350px;
       max-height: 400px;
@@ -410,9 +422,18 @@ body {
   .detail-text {
     margin-top: 120px;
 
+    @media screen and (max-width: $mediaSM) {
+      width: 100%;
+      margin-top: 0px;
+      margin-left: 15px;
+    }
+
     p {
       margin-top: 50px;
       max-width: 400px;
+      @media screen and (max-width: $mediaSM) {
+        margin-top: 10px;
+      }
     }
 
     h5 {
@@ -496,6 +517,10 @@ body {
 .thanks {
   text-align: center;
   margin-top: 500px;
+
+  @media screen and (max-width: $mediaSM) {
+    margin-top: 200px;
+  }
 }
 
 .cart-container {
@@ -503,6 +528,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  @media screen and (max-width: $mediaSM) {
+    width: 100vw;
+    margin-top: 130px;
+  }
 
   .cart-content {
     width: 60%;
@@ -511,12 +540,19 @@ body {
     min-height: 400px;
     box-shadow: $shadow;
     border-radius: 25px;
+    @media screen and (max-width: $mediaSM) {
+      width: 100%;
+    }
 
     .back {
       position: absolute;
       top: 24%;
       left: 25%;
       font-weight: bolder;
+      @media screen and (max-width: $mediaSM) {
+        top: 13%;
+        left: 10%;
+      }
     }
 
     .cart-total {

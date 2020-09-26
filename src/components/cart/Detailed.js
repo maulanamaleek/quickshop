@@ -24,7 +24,7 @@ class Detailed extends React.Component {
     return (
       <div className="detail-container">
         <div className="detail-image">
-          <Link to="/">
+          <Link to="/quickshop">
             <p className="back">← Kembali</p>
           </Link>
           <img src={this.props.image} alt="quickshop" />

@@ -22,7 +22,7 @@ class Cart extends Component {
     return (
       <div className="cart-container">
         <div className="cart-content">
-          <Link to="/">
+          <Link to="/quickshop">
             <p className="back">← Kembali</p>
           </Link>
           <h1>Keranjang</h1>
