@@ -209,6 +209,15 @@ body {
       background-color: $primary;
       border-radius: 15px;
 
+      .banner-small {
+        display: block;
+        max-width: 90%;
+        margin: auto;
+        @media screen and (max-width: $mediaSM) {
+          display: block;
+        }
+      }
+
       @media screen and (max-width: $mediaSM) {
         border-radius: 0;
         width: 100vw;
@@ -225,6 +234,15 @@ body {
         height: 145px;
         border-radius: 10px;
         background-color: palevioletred;
+
+        .side-one {
+          height: 90%;
+          display: block;
+          margin: auto;
+          @media screen and (max-width: $mediaSM) {
+            display: none;
+          }
+        }
 
         @media screen and (max-width: $mediaSM) {
           display: none;

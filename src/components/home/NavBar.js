@@ -8,7 +8,7 @@ class NavBar extends React.Component {
     return (
       <div className="navbar-container">
         <div className="navbar-content">
-          <Link to="/">
+          <Link to="/quickshop">
             <h1>Quickshop</h1>
           </Link>
           <Link to="/">

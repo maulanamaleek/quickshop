@@ -319,6 +319,18 @@ body {
   border-radius: 15px;
 }
 
+.banner-container .banner-content .main-banner .banner-small {
+  display: block;
+  max-width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 390px) {
+  .banner-container .banner-content .main-banner .banner-small {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .banner-container .banner-content .main-banner {
     border-radius: 0;
@@ -345,6 +357,18 @@ body {
   height: 145px;
   border-radius: 10px;
   background-color: palevioletred;
+}
+
+.banner-container .banner-content .side-banner .side-item .side-one {
+  height: 90%;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 390px) {
+  .banner-container .banner-content .side-banner .side-item .side-one {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 390px) {

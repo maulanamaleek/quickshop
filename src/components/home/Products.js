@@ -58,10 +58,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     type: dispatch(addToCart()),
-//   };
-// };
-
 export default connect(mapStateToProps)(Products);
