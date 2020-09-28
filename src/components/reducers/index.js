@@ -1,5 +1,17 @@
 import { initState } from "./initState";
-import { ADD_TO_CART, SUB_QUANTITY, ADD_QUANTITY, CLEAR } from "../actions";
+import {
+  ADD_TO_CART,
+  SUB_QUANTITY,
+  ADD_QUANTITY,
+  CLEAR,
+  ELEKTRONIK,
+  ALL,
+  PAKAIAN,
+  SEPATU,
+  AKSESORIS,
+  HOBI,
+  PELIHARAAN,
+} from "../actions";
 
 export default function rootReducer(state = initState, action) {
   switch (action.type) {
@@ -47,6 +59,68 @@ export default function rootReducer(state = initState, action) {
         products: resetProduct,
         carts: 0,
         added: [],
+      };
+
+    case ALL:
+      return {
+        ...state,
+        products: initState.products,
+      };
+
+    case ELEKTRONIK:
+      let findElektro = initState.products.filter(
+        (item) => item.category === "ELEKTRONIK"
+      );
+      return {
+        ...state,
+        products: findElektro,
+      };
+
+    case PAKAIAN:
+      let findPakaian = initState.products.filter(
+        (item) => item.category === "PAKAIAN"
+      );
+
+      return {
+        ...state,
+        products: findPakaian,
+      };
+
+    case SEPATU:
+      let findSepatu = initState.products.filter(
+        (item) => item.category === "SEPATU"
+      );
+
+      return {
+        ...state,
+        products: findSepatu,
+      };
+
+    case AKSESORIS:
+      let findAksesoris = initState.products.filter(
+        (item) => item.category === "AKSESORIS"
+      );
+      return {
+        ...state,
+        products: findAksesoris,
+      };
+
+    case HOBI:
+      let findHobi = initState.products.filter(
+        (item) => item.category === "HOBI"
+      );
+      return {
+        ...state,
+        products: findHobi,
+      };
+
+    case PELIHARAAN:
+      let findPet = initState.products.filter(
+        (item) => item.category === "PELIHARAAN"
+      );
+      return {
+        ...state,
+        products: findPet,
       };
 
     default:

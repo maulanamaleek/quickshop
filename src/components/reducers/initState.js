@@ -37,7 +37,7 @@ export const initState = {
     {
       id: 2,
       name: "Kemeja Hawaii",
-      category: "BAJU",
+      category: "PAKAIAN",
       price: 120000,
       quantity: 1,
       image: Hawaii,
@@ -47,7 +47,7 @@ export const initState = {
     {
       id: 3,
       name: "Louis Jeans",
-      category: "CELANA",
+      category: "PAKAIAN",
       quantity: 1,
       price: 229000,
       image: Jeans,
@@ -56,7 +56,7 @@ export const initState = {
     {
       id: 4,
       name: "Tas Lucu",
-      category: "TAS",
+      category: "AKSESORIS",
       quantity: 1,
       price: 175000,
       image: Bag,
@@ -103,7 +103,7 @@ export const initState = {
     {
       id: 9,
       name: "Chinos Pendek",
-      category: "CELANA",
+      category: "PAKAIAN",
       price: 97000,
       quantity: 1,
       image: Chinos,
@@ -159,7 +159,7 @@ export const initState = {
     {
       id: 15,
       name: "Kaos Dalam Putih",
-      category: "BAJU",
+      category: "PAKAIAN",
       quantity: 1,
       price: 35000,
       image: Kaos,
@@ -168,7 +168,7 @@ export const initState = {
     {
       id: 16,
       name: "Celana Jogging",
-      category: "CELANA",
+      category: "PAKAIAN",
       price: 68000,
       quantity: 1,
       image: Jogging,
@@ -195,7 +195,7 @@ export const initState = {
     {
       id: 19,
       name: "Ransel Waterproof",
-      category: "TAS",
+      category: "AKSESORIS",
       price: 355000,
       quantity: 1,
       image: Water,
@@ -204,7 +204,7 @@ export const initState = {
     {
       id: 20,
       name: "Tas Anak",
-      category: "TAS",
+      category: "AKSESORIS",
       price: 125000,
       image: Kid,
       quantity: 1,
@@ -232,7 +232,7 @@ export const initState = {
     {
       id: 23,
       name: "Kemeja Kotak",
-      category: "BAJU",
+      category: "PAKAIAN",
       quantity: 1,
       price: 125000,
       image: Kemeja,
