@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/quickshop/static/css/main.45273443.chunk.css",
-    "main.js": "/quickshop/static/js/main.8a97855e.chunk.js",
-    "main.js.map": "/quickshop/static/js/main.8a97855e.chunk.js.map",
+    "main.css": "/quickshop/static/css/main.b4bc02fa.chunk.css",
+    "main.js": "/quickshop/static/js/main.83ca342e.chunk.js",
+    "main.js.map": "/quickshop/static/js/main.83ca342e.chunk.js.map",
     "runtime-main.js": "/quickshop/static/js/runtime-main.cb5af680.js",
     "runtime-main.js.map": "/quickshop/static/js/runtime-main.cb5af680.js.map",
-    "static/js/2.e5012747.chunk.js": "/quickshop/static/js/2.e5012747.chunk.js",
-    "static/js/2.e5012747.chunk.js.map": "/quickshop/static/js/2.e5012747.chunk.js.map",
+    "static/js/2.cd78c1f9.chunk.js": "/quickshop/static/js/2.cd78c1f9.chunk.js",
+    "static/js/2.cd78c1f9.chunk.js.map": "/quickshop/static/js/2.cd78c1f9.chunk.js.map",
     "index.html": "/quickshop/index.html",
-    "precache-manifest.e7bfec4ec6b268060665f9c23f8dcc18.js": "/quickshop/precache-manifest.e7bfec4ec6b268060665f9c23f8dcc18.js",
+    "precache-manifest.335af0bde101e4b1ca96b48ea0b53c18.js": "/quickshop/precache-manifest.335af0bde101e4b1ca96b48ea0b53c18.js",
     "service-worker.js": "/quickshop/service-worker.js",
-    "static/css/main.45273443.chunk.css.map": "/quickshop/static/css/main.45273443.chunk.css.map",
-    "static/js/2.e5012747.chunk.js.LICENSE.txt": "/quickshop/static/js/2.e5012747.chunk.js.LICENSE.txt",
+    "static/css/main.b4bc02fa.chunk.css.map": "/quickshop/static/css/main.b4bc02fa.chunk.css.map",
+    "static/js/2.cd78c1f9.chunk.js.LICENSE.txt": "/quickshop/static/js/2.cd78c1f9.chunk.js.LICENSE.txt",
     "static/media/alex.jpg": "/quickshop/static/media/alex.056f526e.jpg",
     "static/media/bag.jpg": "/quickshop/static/media/bag.ed093238.jpg",
+    "static/media/bannersm.png": "/quickshop/static/media/bannersm.25950beb.png",
     "static/media/basket.jpg": "/quickshop/static/media/basket.fcea540d.jpg",
     "static/media/canon.jpg": "/quickshop/static/media/canon.c2e471b2.jpg",
     "static/media/cat.jpg": "/quickshop/static/media/cat.334802d3.jpg",
@@ -30,14 +31,16 @@
     "static/media/necklace.jpg": "/quickshop/static/media/necklace.ed62ee47.jpg",
     "static/media/oppo.jpg": "/quickshop/static/media/oppo.d42f8ef1.jpg",
     "static/media/pensil.jpg": "/quickshop/static/media/pensil.2496fb1b.jpg",
+    "static/media/sideone.png": "/quickshop/static/media/sideone.0610f8de.png",
+    "static/media/sidetwo.png": "/quickshop/static/media/sidetwo.408baaf3.png",
     "static/media/skateboard.jpg": "/quickshop/static/media/skateboard.b3a3ef43.jpg",
     "static/media/water.jpg": "/quickshop/static/media/water.74b9d65d.jpg",
     "static/media/whiskas.jpg": "/quickshop/static/media/whiskas.b37245cd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cb5af680.js",
-    "static/js/2.e5012747.chunk.js",
-    "static/css/main.45273443.chunk.css",
-    "static/js/main.8a97855e.chunk.js"
+    "static/js/2.cd78c1f9.chunk.js",
+    "static/css/main.b4bc02fa.chunk.css",
+    "static/js/main.83ca342e.chunk.js"
   ]
 }

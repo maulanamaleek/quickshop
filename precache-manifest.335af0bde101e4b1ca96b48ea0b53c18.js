@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55f703c0eefd2742af0ed344066328e4",
+    "revision": "5fb5db4211f2a5417d30347ee6840d4f",
     "url": "/quickshop/index.html"
   },
   {
-    "revision": "8f0729e40194813e5065",
-    "url": "/quickshop/static/css/main.45273443.chunk.css"
+    "revision": "a6fd8159587719ff7275",
+    "url": "/quickshop/static/css/main.b4bc02fa.chunk.css"
   },
   {
-    "revision": "bbe0e89ace1d0a32c8a3",
-    "url": "/quickshop/static/js/2.e5012747.chunk.js"
+    "revision": "f15592def9321658f284",
+    "url": "/quickshop/static/js/2.cd78c1f9.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/quickshop/static/js/2.e5012747.chunk.js.LICENSE.txt"
+    "url": "/quickshop/static/js/2.cd78c1f9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8f0729e40194813e5065",
-    "url": "/quickshop/static/js/main.8a97855e.chunk.js"
+    "revision": "a6fd8159587719ff7275",
+    "url": "/quickshop/static/js/main.83ca342e.chunk.js"
   },
   {
     "revision": "d69e7cc0b7b0ce6c53f4",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ed093238e9f07fe6185a24434852e319",
     "url": "/quickshop/static/media/bag.ed093238.jpg"
+  },
+  {
+    "revision": "25950beb1ee7697dd74efe2f23e66388",
+    "url": "/quickshop/static/media/bannersm.25950beb.png"
   },
   {
     "revision": "fcea540d2af395275c9680b4a1e0bec3",
@@ -94,6 +98,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2496fb1b236a1ccd4fc891060f6812fd",
     "url": "/quickshop/static/media/pensil.2496fb1b.jpg"
+  },
+  {
+    "revision": "0610f8de1e2c7c467ffedd4388fd7db7",
+    "url": "/quickshop/static/media/sideone.0610f8de.png"
+  },
+  {
+    "revision": "408baaf329f6feef751e909db2d28c57",
+    "url": "/quickshop/static/media/sidetwo.408baaf3.png"
   },
   {
     "revision": "b3a3ef432597633288204babe5ab93b1",
