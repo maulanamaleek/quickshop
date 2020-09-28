@@ -455,6 +455,9 @@ body {
     background-color: #fff;
     overflow-y: hidden;
   }
+  .category-container .category-content .item:hover {
+    color: palevioletred;
+  }
 }
 
 .category-container .category-content .item .fas {
@@ -626,7 +629,7 @@ body {
     height: max-content;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    top: 500px;
+    top: 450px;
   }
 }
 
@@ -640,6 +643,12 @@ body {
   top: 5%;
   left: 5%;
   font-weight: bolder;
+}
+
+@media screen and (max-width: 390px) {
+  .detail-container .back {
+    top: 10%;
+  }
 }
 
 .detail-container .back:hover {
@@ -674,8 +683,12 @@ body {
 @media screen and (max-width: 390px) {
   .detail-container .detail-text {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 15px;
+    overflow-y: hidden;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 
@@ -687,6 +700,7 @@ body {
 @media screen and (max-width: 390px) {
   .detail-container .detail-text p {
     margin-top: 10px;
+    max-width: 90vw;
   }
 }
 
@@ -705,6 +719,12 @@ body {
   padding: 10px 12px;
   text-transform: uppercase;
   border-radius: 10px 0px 0px 10px;
+}
+
+@media screen and (max-width: 390px) {
+  .detail-container .btn-keranjang {
+    margin-bottom: 100px;
+  }
 }
 
 .detail-container .btn-keranjang:hover {

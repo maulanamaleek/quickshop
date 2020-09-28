@@ -11,7 +11,7 @@ class NavBar extends React.Component {
           <Link to="/quickshop">
             <h1>Quickshop</h1>
           </Link>
-          <Link to="/">
+          <Link to="/quickshop">
             <img className="logo-small" src={Logo} alt="logo" />
           </Link>
           <form>

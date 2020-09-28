@@ -289,6 +289,9 @@ body {
       @media screen and (max-width: $mediaSM) {
         background-color: #fff;
         overflow-y: hidden;
+        &:hover {
+          color: palevioletred;
+        }
       }
       .fas {
         color: $primary;
@@ -405,7 +408,7 @@ body {
     width: 100vw;
     height: max-content;
     grid-template-columns: 1fr;
-    top: 500px;
+    top: 450px;
   }
 
   a {
@@ -417,6 +420,10 @@ body {
     top: 5%;
     left: 5%;
     font-weight: bolder;
+
+    @media screen and (max-width: $mediaSM) {
+      top: 10%;
+    }
 
     &:hover {
       cursor: pointer;
@@ -442,8 +449,10 @@ body {
 
     @media screen and (max-width: $mediaSM) {
       width: 100%;
-      margin-top: 0px;
+      margin-top: 20px;
       margin-left: 15px;
+      overflow-y: hidden;
+      height: max-content;
     }
 
     p {
@@ -451,6 +460,7 @@ body {
       max-width: 400px;
       @media screen and (max-width: $mediaSM) {
         margin-top: 10px;
+        max-width: 90vw;
       }
     }
 
@@ -470,6 +480,10 @@ body {
     padding: 10px 12px;
     text-transform: uppercase;
     border-radius: 10px 0px 0px 10px;
+
+    @media screen and (max-width: $mediaSM) {
+      margin-bottom: 100px;
+    }
 
     &:hover {
       cursor: pointer;
