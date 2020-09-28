@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "928688503236702c039d103b97296edc",
+    "revision": "98befa13ec4c336cdd55f5014b747b20",
     "url": "/quickshop/index.html"
   },
   {
-    "revision": "82e9c0307d29c0a4c5d3",
+    "revision": "523ed556b188dc2b0579",
     "url": "/quickshop/static/css/main.d86888e8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/quickshop/static/js/2.cd78c1f9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82e9c0307d29c0a4c5d3",
-    "url": "/quickshop/static/js/main.1ffeeb44.chunk.js"
+    "revision": "523ed556b188dc2b0579",
+    "url": "/quickshop/static/js/main.2fd5b778.chunk.js"
   },
   {
     "revision": "d69e7cc0b7b0ce6c53f4",
