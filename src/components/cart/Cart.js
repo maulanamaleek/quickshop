@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { clearCart } from "../actions";
 
 class Cart extends Component {
+  handleClear = () => {
+    this.props.clearCart();
+  };
+
   displayCart() {
     console.log(this.props.added);
     return this.props.added.map((item) => {
@@ -44,7 +49,9 @@ class Cart extends Component {
             </p>
           </div>
           <Link to="/complete">
-            <button className="bayar-cart">Bayar</button>
+            <button onClick={() => this.handleClear()} className="bayar-cart">
+              Bayar
+            </button>
           </Link>
         </div>
       </div>
@@ -59,4 +66,12 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(Cart);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    clearCart: () => {
+      dispatch(clearCart());
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);
