@@ -62,7 +62,7 @@ class Category extends React.Component {
             value="ALL"
             className="item"
           >
-            <i className="fas fa-bolt fa-2x" />
+            <i className="fas fa-expand-arrows-alt fa-2x" />
             <p>Semua</p>
           </div>
           <div
@@ -92,7 +92,7 @@ class Category extends React.Component {
             className="item"
           >
             <i className="fas fa-shopping-bag fa-2x" />
-            <p>Tas & Aksesoris</p>
+            <p>Tas</p>
           </div>
           <div onClick={() => this.hobi(this.props.products)} className="item">
             <i className="fas fa-basketball-ball fa-2x" />
