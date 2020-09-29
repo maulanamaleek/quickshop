@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/quickshop/static/css/main.d86888e8.chunk.css",
-    "main.js": "/quickshop/static/js/main.2fd5b778.chunk.js",
-    "main.js.map": "/quickshop/static/js/main.2fd5b778.chunk.js.map",
+    "main.js": "/quickshop/static/js/main.f77e66ca.chunk.js",
+    "main.js.map": "/quickshop/static/js/main.f77e66ca.chunk.js.map",
     "runtime-main.js": "/quickshop/static/js/runtime-main.cb5af680.js",
     "runtime-main.js.map": "/quickshop/static/js/runtime-main.cb5af680.js.map",
     "static/js/2.cd78c1f9.chunk.js": "/quickshop/static/js/2.cd78c1f9.chunk.js",
     "static/js/2.cd78c1f9.chunk.js.map": "/quickshop/static/js/2.cd78c1f9.chunk.js.map",
     "index.html": "/quickshop/index.html",
-    "precache-manifest.afd3fdc82ab4f095eea64cdb5bfcf5c2.js": "/quickshop/precache-manifest.afd3fdc82ab4f095eea64cdb5bfcf5c2.js",
+    "precache-manifest.5bea4fa386d393ae1acb3d6cfc539f6d.js": "/quickshop/precache-manifest.5bea4fa386d393ae1acb3d6cfc539f6d.js",
     "service-worker.js": "/quickshop/service-worker.js",
     "static/css/main.d86888e8.chunk.css.map": "/quickshop/static/css/main.d86888e8.chunk.css.map",
     "static/js/2.cd78c1f9.chunk.js.LICENSE.txt": "/quickshop/static/js/2.cd78c1f9.chunk.js.LICENSE.txt",
@@ -41,6 +41,6 @@
     "static/js/runtime-main.cb5af680.js",
     "static/js/2.cd78c1f9.chunk.js",
     "static/css/main.d86888e8.chunk.css",
-    "static/js/main.2fd5b778.chunk.js"
+    "static/js/main.f77e66ca.chunk.js"
   ]
 }
