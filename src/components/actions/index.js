@@ -9,6 +9,14 @@ export const SEPATU = "SEPATU";
 export const AKSESORIS = "AKSESORIS";
 export const HOBI = "HOBI";
 export const PELIHARAAN = "PELIHARAAN";
+export const SEARCH = "SEARCH";
+
+export const searchFilter = (value) => {
+  return {
+    type: SEARCH,
+    value,
+  };
+};
 
 export const filterPeliharaan = (category) => {
   return {

@@ -1,9 +1,26 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { searchFilter } from "../actions";
 import Logo from "./icon.png";
 
 class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      search: "",
+    };
+  }
+
+  onChange = (e) => {
+    const text = e.target.value.toLowerCase();
+    this.setState({ search: text });
+  };
+
+  handleSearch = (value) => {
+    this.props.search(value);
+  };
+
   render() {
     return (
       <div className="navbar-container">
@@ -14,9 +31,19 @@ class NavBar extends React.Component {
           <Link to="/quickshop">
             <img className="logo-small" src={Logo} alt="logo" />
           </Link>
-          <form>
-            <input type="text" placeholder="Temukan apapun yang kamu mau" />
-            <button type="submit">Cari</button>
+          <form onSubmit={(e) => e.preventDefault()}>
+            <input
+              type="text"
+              value={this.state.search}
+              onChange={this.onChange}
+              placeholder="Temukan apapun yang kamu mau"
+            />
+            <button
+              onClick={() => this.handleSearch(this.state.search)}
+              type="submit"
+            >
+              Cari
+            </button>
           </form>
           <div className="info">
             <div className="cart">
@@ -41,4 +68,12 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(NavBar);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    search: (value) => {
+      dispatch(searchFilter(value));
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

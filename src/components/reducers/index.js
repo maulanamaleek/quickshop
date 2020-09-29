@@ -11,6 +11,7 @@ import {
   AKSESORIS,
   HOBI,
   PELIHARAAN,
+  SEARCH,
 } from "../actions";
 
 export default function rootReducer(state = initState, action) {
@@ -122,6 +123,15 @@ export default function rootReducer(state = initState, action) {
         ...state,
         products: findPet,
       };
+
+    case SEARCH:
+      let searchFilter = initState.products.filter(
+        (item) =>
+          item.name.toLowerCase().slice(0, action.value.length) === action.value
+      );
+
+      console.log(searchFilter);
+      return { ...state, products: searchFilter };
 
     default:
       return state;
